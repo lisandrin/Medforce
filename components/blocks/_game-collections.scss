@@ -25,7 +25,7 @@
                 height: auto;
                 display: inline-block;
                 background-color: #fff;
-                text-align: left !important;
+                text-align: left;
                 border-radius: 10px;
                 background-color: #202066;
                 cursor: pointer;
@@ -63,7 +63,7 @@
                         font-weight: bold;
                         text-align: left;
                         color: #fff;
-                        padding-bottom: 4px !important;
+                        padding-bottom: 4px;
                     }
                     .spans{
                         width: 100%;
@@ -99,11 +99,11 @@
                     display: flex;
                     justify-content: space-between;
                     padding: 30px 15px;
-                    background-color: none !important;
+                    background-color: none;
 
                     button{
-                        background-color: transparent !important;
-                        border: none !important;
+                        background-color: transparent;
+                        border: none;
 
                         i{
                             width: 40px;
@@ -114,7 +114,7 @@
                             display: inline-block;
                             border-radius: 50%;
                             color: #dedee2;
-                            background-color: none !important;
+                            background-color: none;
     
                             &:hover{
                                 background-image: -webkit-linear-gradient( -30deg, rgb(193,101,221) 0%, rgb(92,39,254) 100%);
@@ -166,8 +166,8 @@
             .text{
                 width: 100%;
                 display: inline-block;
-                text-align: center !important;
-                justify-content: center !important;
+                text-align: center;
+                justify-content: center;
                 align-items: center;
 
                 img{
@@ -218,7 +218,7 @@
             text-align: left !important;
             font-size: 50px;
             font-weight: bold;
-            padding-right: 5em !important;
+            padding-right: 3em !important;
         }
     }
 } 
@@ -243,7 +243,7 @@
         width: 100%;
         height: auto;
         display: block;
-        justify-content: center !important; 
+        justify-content: center; 
 
         @include head-text;
 
@@ -301,7 +301,7 @@
                     padding: 0;
                     margin: 0;
                     list-style: none;
-                    text-align: left !important;
+                    text-align: left;
 
                     li{
                         padding: 20px 0;

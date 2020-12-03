@@ -198,18 +198,10 @@
                 width: 100%;
                 height: auto;
                 padding-top: 50px;
-            }
-            @include btn;
-            @include btn;
-            .browse-btn{
-                background-image: none !important;
-                background-color: #171744 !important;
-                border: 60px !important;
-                border: 1px solid #3a446a !important;
 
-                &:hover{
-                    background-image: -webkit-linear-gradient( -30deg, rgb(193,101,221) 0%, rgb(92,39,254) 100%);
-                }
+                @include btn;
+                
+                @include dark-btn;
             }
         }
     }

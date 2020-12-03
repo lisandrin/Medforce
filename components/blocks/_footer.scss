@@ -209,11 +209,12 @@
 
                 input{
                     width: 100%;
-                    padding: 20px;
+                    padding: 23px 250px 19px 31px;
                     border-radius: 60px;
                     outline: none;
                     border: 1px solid #7983b5;
                     background-color: #3b4a93;
+                    color: #fff;
 
                     &:placeholder-shown{
                         color: #fff;
@@ -283,7 +284,7 @@
                 padding: 30px 0;
                 border-top: 1px solid #40509d;
                 margin-top: 20px;
-                justify-content: space-between !important;
+                justify-content: space-between; 
 
                 .inner-text{
                     width: 100%;
@@ -304,8 +305,7 @@
                     justify-content: flex-end;
 
                     li{
-                        padding-top: 0px !important;
-                        padding: 30px;
+                        padding-left: 50px;
 
                         a{
                             width: 40px;
