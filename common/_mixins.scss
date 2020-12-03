@@ -1,0 +1,90 @@
+@mixin text {
+    
+
+        h2{
+            font-size: 80px;
+            color: #fff;
+            text-transform: capitalize;
+            text-align: left;
+        }
+
+        p{
+            font-size: 24px;
+            text-transform: capitalize;
+            text-align: left;
+            font-weight: 300;
+            letter-spacing: 1px;
+            line-height: 1.7;
+            color:#dedee2;
+        }
+
+        span{
+            text-transform: uppercase;
+            color: #fff;
+            margin-bottom: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 1.25;
+            font-weight: 600;
+        }
+}
+
+@mixin paddingAll {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@mixin head-text{
+    .head-text{
+        width: 100%;
+        display: inline-block;
+        height: auto;
+        padding:20px;
+        text-align: center;
+
+        span{
+            color: #05c3de;
+            margin-bottom: 22px;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        h2{
+            font-size: 40px;
+            font-weight: bold;
+            padding: 0;
+            text-transform: capitalize;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #fff;
+        }
+
+        p{
+            font-size: 18px;
+            font-weight: 500;
+            color: #dedee2;
+            line-height: 1.7;
+            text-align: center;
+            padding-left: 15em;
+            padding-right: 15em;
+
+            @media (max-width: 889px){
+                padding: 0px;
+            }
+        } 
+    }
+}
+
+@mixin stars {
+    .stars{
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+
+        i{
+            color:#ffcc00;
+        }
+    }
+}

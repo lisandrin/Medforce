@@ -1,0 +1,323 @@
+.game-collection{
+    width: 100%;
+    display: flex;
+    height: auto;
+    justify-content: center;
+    background-color: #1c1c50;
+    padding-bottom: 10em;
+
+    .game-collection-content{
+        width: 100%;
+        display: inline-block;
+        height: auto;
+        padding-top: 20em;
+
+        @include head-text;
+
+        .cards{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+
+            .card{
+                width: 350px;
+                height: auto;
+                display: inline-block;
+                background-color: #fff;
+                text-align: left !important;
+                border-radius: 10px;
+                background-color: #202066;
+                cursor: pointer;
+
+                &:hover>i{
+                    background-image: linear-gradient( -30deg, rgb(193,101,221) 0%, rgb(92,39,254) 100%);
+                }
+
+                .pic{
+                    width: 100%;
+                    height: auto;
+                    position: relative;
+                    
+                    &::before{
+                        position: absolute;
+                        content: '';
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 97%;
+                        opacity: .5;
+                        border-radius: 10px 10px 0 0;
+                        background-image: -moz-linear-gradient( -30deg, rgb(193,101,221) 0%, rgb(92,39,254) 100%);
+                        background-image: -webkit-linear-gradient( -30deg, rgb(193,101,221) 0%, rgb(92,39,254) 100%);
+                    }
+                }
+
+                .text{
+                    width: 100%;
+                    padding: 0px 15px;
+                    border-bottom: 1px solid #2b2b6e;
+
+                    h3{
+                        font-size: 24px;
+                        font-weight: bold;
+                        text-align: left;
+                        color: #fff;
+                        padding-bottom: 4px !important;
+                    }
+                    .spans{
+                        width: 100%;
+                        display: flex;
+                        padding-bottom: 15px;
+
+                        .vers{
+                            color: #dedee2;
+                            padding-top: 10px;
+                            position: relative;
+
+                            &::after{
+                                position: absolute;
+                                content: '';
+                                top: 10px;
+                                right:-20px;
+                                width: 2px;
+                                height: 16px;
+                                background-color: #999dc9;
+                            }
+                        }
+
+                        @include stars;
+                        .stars{
+                            justify-content: left !important;
+                            padding-left: 40px; 
+                        }
+                    }
+                }
+
+                .players{
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 30px 15px;
+                    background-color: none !important;
+
+                    button{
+                        background-color: transparent !important;
+                        border: none !important;
+
+                        i{
+                            width: 40px;
+                            height: 40px;
+                            line-height: 35px;
+                            border: 1px solid #3a446a;
+                            text-align: center; 
+                            display: inline-block;
+                            border-radius: 50%;
+                            color: #dedee2;
+                            background-color: none !important;
+    
+                            &:hover{
+                                background-image: -webkit-linear-gradient( -30deg, rgb(193,101,221) 0%, rgb(92,39,254) 100%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.testimonials{ 
+    width: 100%;
+    display: flex;
+    height: auto;
+    padding-top: 100px;
+   padding-bottom: 100px;
+
+    .testimonials-content{
+        width: 100%;
+        display: flex;
+        height: auto;
+        position: relative;
+
+        .bagel{
+            position: absolute;
+            top: 0;
+            left: 40%;
+            animation: ship 3s linear infinite;
+        }
+
+        .lil-bagel{
+            position: absolute;
+            bottom: -20%;
+            left: 11%;
+            animation: ship 3s linear infinite;
+        }
+
+        .slide{
+            width: 100%;
+            height: 635px;
+            margin-top: 50px;
+            padding: 90px 50px 131px;
+            border-radius: 50%;
+            z-index: 100;
+            background-image: -webkit-linear-gradient( 16deg, rgb(225,161,237) 0%, rgb(172,125,241) 35%, rgb(118,88,244) 100%);
+
+            .text{
+                width: 100%;
+                display: inline-block;
+                text-align: center !important;
+                justify-content: center !important;
+                align-items: center;
+
+                img{
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                    background-position: center;
+                }
+
+                @include stars;
+
+                p{
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+
+                .client-name{
+                    width: 100%;
+                    text-align: center;
+                    padding-right: 7em;
+                    padding-left: 7em;
+                    p{
+                        width: 100%;
+                        font-size: 24px;
+                        padding: 5px 30px;
+                        text-align: center;
+                        background-color: #8662d9;
+                        border-radius: 50px;
+                        margin-top: 30px;
+                    }
+                }
+            }
+        }
+
+        @include head-text;
+        .head-text{
+            width: 100%;
+            text-align: left;
+            padding-top: 15em;
+
+            span{
+                font-weight: bold;
+                font-size: 24px;
+            }
+
+            @include btn;
+        }
+        h2{
+            text-align: left !important;
+            font-size: 50px;
+            font-weight: bold;
+            padding-right: 5em !important;
+        }
+    }
+} 
+
+.pricing{
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    padding-top: 120px;
+    padding-bottom: 100px;
+
+    .pricing-element{
+        width: 100%;
+        height: auto;
+        display: flex;
+        position: absolute;
+        top: 0;
+    }
+
+    .pricing-content{
+        width: 100%;
+        height: auto;
+        display: block;
+        justify-content: center !important; 
+
+        @include head-text;
+
+        .pricing-cards{
+            width: 100%;
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            justify-content: center;
+
+            .card{
+                padding: 60px 30px;
+                background-color: #263698;
+                border-radius: 15px;
+                position: relative;
+                overflow: hidden;
+                text-align: center;
+
+                .card-top-element{
+                    width: 100%;
+                    position: absolute;
+                    top: -10px;
+                    left: 0;
+                }
+
+                .price{
+                    display: inline-block;
+                    border-bottom: 1px solid #3947a0;
+                    padding: 20px 0;
+                    text-align: center;
+
+                    span{
+                        font-size: 24px;
+                        margin-bottom: 7px;
+                        text-transform: capitalize;
+                    }
+
+                    h2{
+                        color: #05c3de;
+                        font-size: 50px;
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 10px;
+
+                        span{
+                            font-size: 30px;
+                            font-size: 30px;
+                            color: #05c3de;
+                        }
+                    }
+                }
+
+                ul{
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    text-align: left !important;
+
+                    li{
+                        padding: 20px 0;
+                        border-bottom: 1px solid #3947a0;
+                        text-transform:capitalize;
+                        color: #dedee2;
+                        font-size: 16px;
+                    }
+                }
+
+                @include btn;
+
+                button{
+                    margin-top: 25px !important;
+                }
+            }
+        }
+    }
+}

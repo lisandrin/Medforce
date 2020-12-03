@@ -1,0 +1,240 @@
+.join-world{
+    width: 100%;
+    display: flex;
+    height: auto;
+    position: relative;
+    background-color: #171744;
+
+    .join-world-content{
+        width: 100%;
+        display: block;
+        height: auto;
+        padding-top: 100px;
+        margin-bottom: -200px;
+        
+        @media (max-width: 871px){
+            justify-content: center;
+        }
+
+        .join-circle{
+            position: absolute;
+            top: 0;
+            left: -0;
+            animation: zoominout 4s linear infinite;
+            z-index: 0;
+        }
+
+        .join-circle2{
+            position: absolute;
+            top: 7%;
+            left: 27%;
+            animation: zoominout 4s linear infinite;
+            
+        }
+        .join-circle3{
+            position: absolute;
+            top: 5%;
+            left: 40%;
+            animation: zoominout 4s linear infinite;
+        }
+
+        .join-icon1{
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            animation: line 10s infinite linear;
+        }
+        .join-icon2{
+            position: absolute;
+            top: 20%;
+            left: 48%;
+            animation: line 8s infinite linear;
+        }
+        .join-icon3{
+            position: absolute;
+            top: 10%;
+            right: 10%;
+            animation: line 10s infinite linear;
+        }
+        .join-icon4{
+            position: absolute;
+            top: 10%;
+            right: 6%;
+            animation: line 16s infinite linear
+        }
+
+        @include head-text;
+
+        .customers{
+            width: 100%;
+            display: flex;
+            height: auto;
+            background-color: transparent;
+
+            @media (max-width: 871px){
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+
+            .user-numbs{
+                width: 50%;
+                display: grid;
+                grid-template-rows: 1fr 1fr 1fr;
+                row-gap: 20px;
+                z-index: 10;
+
+                @media (max-width: 871px){
+                    width: 70%;
+                    display: grid;
+                    gap: 20px;
+                    grid-template-columns: 1fr;
+                }
+
+                .card{
+                    width: 360px;
+                    display: inline-block;
+                    height: 150px;
+                    background-color: #1c1d55;
+                    padding: 40px 30px 40px 30px;
+                    text-align: left;
+                    border-radius: 8px;
+
+                    span{
+                        color: #fff;
+                        font-size: 28px;
+                        font-weight: bold;
+                    }
+
+                    p{
+                        padding-top: 15px;
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: #05c3de;
+                    }
+                }
+            }
+
+            .map{
+                width: 100%;
+                display: flex;
+                height: auto;
+
+                .pic{
+                    width: 100%;
+                    height: 500px;
+                    padding-top: 2em;
+                    padding-left: 6em;
+                    position: relative;
+
+                    svg{
+                        width: 100%;
+                        height: 100%;
+                    }
+
+                    .position-1, .position-2, .position-3,
+                    .position-4, .position-5, .position-6, .position-7,
+                    .position-8{
+                        position: absolute;
+                        z-index: 1;
+                        width: 10px;
+                        height: 10px;
+                        border: 2px solid #8f46ed;
+                        box-shadow: 0 0 5px 3px rgba(254, 196, 45, 0.2);
+                        border-radius: 50%;
+                        display: block;
+                        cursor: pointer;
+                        background-color: #8f46ed;
+                        animation: pulse 5s linear infinite;
+                    }
+                    .position-1 {
+                        top: 16%;
+                        left: 38%;
+                    }
+
+                    .position-2 {
+                        top: 35%;
+                        left: 18%;
+                    }
+                    .position-3 {
+                        top: 63%;
+                        left: 54%;
+                    }
+                    .position-4 {
+                        top: 63%;
+                        left: 28%;
+                    }
+                    .position-5 {
+                        top: 16%;
+                        left: 68%;
+                    }
+                    .position-6 {
+                        top: 36%;
+                        left: 75%;
+                    }
+                    .position-7 {
+                        top: 44%;
+                        left: 50%;
+                    }
+                    .position-8 {
+                        top: 75%;
+                        left: 86%;
+                    }
+                }
+
+
+            }
+        }
+        .tournaments{
+            width: 100%;
+            display: flex;
+            height: auto;
+            padding-top: 10em;
+            
+            .tour-content{
+                width: 100%;
+                height: auto;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                background-color: #202066;
+                border-radius: 10px;
+                padding: 120px 100px;
+                z-index: 9;
+            }
+
+            .cards{
+                width: 100%;
+                display: inline-block;
+                height: 200px;
+                border-right: 2px solid #4d4d85;
+                text-align: center;
+                justify-content: center;
+                align-items:center;
+
+                .pic{
+                    width: 100%;
+                    height: auto;
+                    text-align: center;
+                }
+
+                h5{
+                    color: #fff;
+                    padding-top: 30px;
+                    padding-left: 50px;
+                    padding-right: 50px;
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+                a{
+                    color: #9999c5;
+                    font-size: 16px;
+                    text-decoration: none;
+                    background-color: none;
+
+                    i{
+                        padding-left: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

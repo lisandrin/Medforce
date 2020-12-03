@@ -1,0 +1,73 @@
+.new-games{
+    width: 100%;
+    display: flex;
+    height: auto;
+    padding-top: 8em;
+    background-color: #1c1c50;
+
+    .new-games-content{
+        width: 100%;
+        display: block;
+        height: auto;
+        position: relative;
+        padding-bottom: 100px;
+
+        @include head-text; 
+
+        .new-games-slide{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: auto;
+            padding-top: 20px;
+
+            @media (max-width: 889px){
+
+                grid-template-columns: 1fr;
+            }
+
+            .pic{
+                width: 60%;
+                height: 45em;
+                padding-right: 15px;
+                padding-left: 0;
+                position: relative;
+                top: 0;
+                left: 0%;
+
+                @media (max-width: 889px){
+                    display: none;
+                }
+
+                .img{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-image: url(/imgs/play.png);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    height: auto;
+                    width: 100%!important;    
+                }
+            }
+            .circle-slide{
+                width: 100%;
+                display: flex;
+                height: auto;
+                position: relative;
+
+                .slide{
+                    width: 100%;
+                    display: block;
+                    height: auto;
+
+                    img{
+                        background-position: center;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+}

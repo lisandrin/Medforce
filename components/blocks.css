@@ -1,0 +1,62 @@
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.header .header-content {
+  background-color: transparent;
+  width: 100%;
+  display: block;
+  z-index: 99;
+  -webkit-transition: all ease 1s;
+  transition: all ease 1s;
+}
+
+.header .header-content .social-section {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: transparent;
+  padding: 20px 0;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+.header .header-content .social-section .logo {
+  width: 180px;
+  height: auto;
+}
+
+.header .header-content .social-section .logo img {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header .header-content .social-section ul {
+  list-style: none;
+  width: auto;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header .header-content .social-section ul li {
+  padding: 15px;
+}
+
+.header .header-content .social-section ul li a {
+  color: #fff;
+}
+/*# sourceMappingURL=blocks.css.map */

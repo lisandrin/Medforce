@@ -1,0 +1,30 @@
+@mixin btn {
+    button{
+        width: auto;
+        height: 43px;
+        background-image: -webkit-linear-gradient( -30deg, rgb(193,101,221) 0%, rgb(92,39,254) 100%);
+        align-items: center;
+        text-transform: uppercase;
+        border-radius: 60px;
+        border: 1px solid transparent;
+        transition: 0.7s;
+        cursor: pointer;
+        outline: none;
+
+        a{
+            padding: 0px 45px;
+            text-decoration: none;
+            text-align: center;
+            display: inline-block;
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 50px;
+            overflow: hidden;
+            text-transform: uppercase;
+            transition: all 0.5s;
+            z-index: 1;
+            cursor: pointer;
+        }
+    }
+}
