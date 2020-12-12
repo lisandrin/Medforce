@@ -89,3 +89,27 @@
         }
     }
 }
+
+@mixin little-btn {
+    button{
+        background-color: transparent;
+        border: none;
+        border-radius: 50%;
+
+        i{
+            width: 40px;
+            height: 40px;
+            line-height: 35px;
+            border: 1px solid #3a446a;
+            text-align: center; 
+            display: inline-block;
+            border-radius: 50%;
+            color: #dedee2;
+            background-color: none;
+
+            &:hover{
+                background-image: -webkit-linear-gradient( -30deg, rgb(193,101,221) 0%, rgb(92,39,254) 100%);
+            }
+        }
+    }
+}

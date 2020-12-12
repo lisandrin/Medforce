@@ -115,7 +115,6 @@
             z-index: 99;
             position: relative;
             padding: 0 20px !important;
-            background-image: -moz-linear-gradient( 0deg, rgb(93,93,249) 0%, rgb(49,35,102) 100%);
             background-image: -webkit-linear-gradient( 0deg, rgb(93,93,249) 0%, rgb(49,35,102) 100%);
 
             @media (max-width: 730px){
@@ -145,6 +144,10 @@
                         text-transform: capitalize;
                         transition: all 0.5s;
                         letter-spacing: -1px;
+
+                        &:hover{
+                            color: #05c3de;
+                        }
                     }
 
                     .active{
