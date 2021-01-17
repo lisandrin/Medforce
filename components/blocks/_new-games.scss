@@ -5,12 +5,36 @@
     position: relative;
     padding-top: 8em;
     background-color: #1c1c50;
+    padding-bottom: 100px;
+
+    .pic{
+        width: auto;
+        height: 700px;
+        position: absolute;
+        left: 0;   
+        top: 23em;
+        background-size: contain;
+
+        @media (max-width: 1200px){
+            display: none;
+        }
+
+        img{
+            width: 87%;
+            background-position: center;
+            background-size: contain;
+        }
+
+        @media (max-width: 889px){
+            display: none;
+        }
+    }
 
     .new-games-content{
         width: 100%;
         display: block;
         height: auto;
-        padding-bottom: 100px;
+        padding-bottom: 23em;
 
         @include head-text; 
 
@@ -21,10 +45,6 @@
             height: auto;
             padding-top: 50px;
 
-            @media (max-width: 889px){
-
-                grid-template-columns: 1fr;
-            }
 
             .picture-section{
                 width: 30%;
@@ -32,32 +52,13 @@
                 display: flex;
                 background-repeat: no-repeat;
                 background-size: cover;
-                background-image: url(/imgs/play.png);
                 position: absolute;
             }
-            // .pic{
-            //     width: 100%;
-            //     height: 700px;
-            //     display: flex;
-            //     position: absolute;
-            //     left: 0;
 
-            //     img{
-            //         width: 100%;
-            //         height: 100%;
-            //         background-position: center;
-            //         background-size: cover;
-            //         background-repeat: no-repeat;
-            //     }   
-
-            //     @media (max-width: 889px){
-            //         display: none;
-            //     }
-            // }
             .circle-slide{ 
                 width: 100%;
                 display: flex;
-                height:auto;
+                height:700px;
 
                 .circle{
                     width: 49%;
@@ -65,15 +66,57 @@
                     height: 70%;
                     position: absolute;
                     top: 20em;
+                    right: 0;
+
+                    @media (max-width:1200px) {
+                        width: 70%;
+                        z-index: 0;
+                        left: 10em;
+                        height: auto;
+                        background-position: center center;
+                    } 
+
+                    @media (max-width:810px) {
+                        width: 70%;
+                        z-index: 0;
+                        left: 5em;
+                        
+                        img{
+                            min-width: 100%;
+                        }
+                    } 
+
+                    @media (max-width: 652px) {
+                        display: none;
+                    }
+                    
+
+                    img{
+                        background-position: center;
+                        background-size: cover;
+                    }
+
+                    .circle-bg-pic{
+                        display: none;
+                        width: auto;
+                        height: auto;
+
+                        @media (max-width:1200px) {
+                            display: flex;
+                            z-index: 1;
+                            background-position: center center;
+                            min-width: 100%;
+                            
+                        } 
+                    }
 
                     .slide-left{
                         width: auto;
                         height: auto;
                         display: flex;
 
-                        img{
-                            background-position: center;
-                            background-size: cover;
+                        @media (max-width:1200px) {
+                            display: none;
                         }
                     }
 
@@ -83,9 +126,8 @@
                         display: flex;
                         z-index: 999;
 
-                        img{
-                            background-position: center;
-                            background-size: cover;
+                        @media (max-width:1200px) {
+                            display: none;
                         }
                     }
                 }
@@ -100,16 +142,61 @@
                     top:37em;
                     right: 4.5em;
 
+                    @media (max-width:1200px) {
+                        width: 100%;
+                        right: 0;
+                        left: 0;
+                        padding: 2em;
+                        grid-template-columns: 1fr 1fr 1fr;
+                        top: 28em;
+                    } 
+
+                    @media (max-width: 852px) {
+                        grid-template-columns: 1fr 1fr;
+
+                        &:nth-child(3){
+                            display: none;
+                        }
+                    }
+
+                    @media (max-width: 852px) {
+                        grid-template-columns: 1fr;
+                    }
+
                     .card{
                         width: 100%;
                         display: inline-block;
                         height: 300px;
-                        // background-color: #fff;
                         z-index: 1;
                         padding: 10px;
                         text-align: left;
                         background-repeat: no-repeat;
                         background-size: contain;
+
+                        @media (max-width:1200px) {
+                            width: 100%;
+                            height: 30em;
+                            background-size: cover;
+
+                            .text{
+                                padding-top: 15em;
+
+                                h4{
+                                    font-size: 4vmin;
+                                }
+                            }
+                        } 
+
+                        @media (max-width: 850px) {
+                            &:nth-child(2){
+                                margin-top: 3em;
+                            }
+
+                            &:nth-child(3){
+                                display: none;
+                            }
+                        }
+
 
                         .top-text{
                             width: 100%;

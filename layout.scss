@@ -18,6 +18,8 @@ body{
     text-align: left;
     font-style: normal;
     background-color: #171744;
+
+    @include scrollbar;
 }
 .container{
     width: 1200px;
@@ -49,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
 p, span, li{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
-    color: #dedee2;
+    color: #fff;
     line-height: 1.2em;
 }
 

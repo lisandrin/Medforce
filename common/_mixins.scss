@@ -1,5 +1,4 @@
 @mixin text {
-    
 
         h2{
             font-size: 80px;
@@ -41,7 +40,7 @@
         height: auto;
         padding:20px;
         text-align: center;
-        z-index: 105;
+        z-index: 1111;
 
         span{
             color: #05c3de;
@@ -111,5 +110,19 @@
                 background-image: -webkit-linear-gradient( -30deg, rgb(193,101,221) 0%, rgb(92,39,254) 100%);
             }
         }
+    }
+}
+
+@mixin scrollbar{
+    // For Google Chrome
+    &::-webkit-scrollbar {
+      width:  7px;
+      height: 7px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #000;
+    }
+    &::-webkit-scrollbar-track {
+      background:#efeff1;
     }
 }

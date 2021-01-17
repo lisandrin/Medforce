@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaming</title>
+    <title>Medforce Gaming</title>
 
-    <link rel="stylesheet" href="style.scss">
+    <link rel="shortcut icon" href="./imgs/ico.png" type="image/png">
+
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
     <script src="https://kit.fontawesome.com/ead4a1e7ea.js" crossorigin="anonymous"></script>
 
-    <header class="header">
+    <header class="header"> 
         <div class="container">
             <div class="header-content">
                 <div class="top-header">
@@ -27,9 +29,18 @@
                             <li><a href="#pinterest"><i class="fab fa-pinterest-p"></i></a></li>
                         </ul>
                         <div class="dropdown-lang">
-                            <span></span>
-                            <p>Languages</p>
-                            <i class="fas fa-caret-down"></i>
+                            <div class="dropdown-btn">
+                                <span></span>
+                                <p>Languages</p>
+                                <i class="fas fa-caret-down"></i>
+                            </div>
+                            <div class="dropdown-content">
+                                <ul>
+                                    <li>English</li>
+                                    <li>Russian</li>
+                                    <li>Korean</li>
+                                </ul>
+                            </div>
                         </div>
                         <button><a href="#joinus">Join us</a></button>
                     </div>
@@ -107,6 +118,11 @@
                 </div>
                 <div class="manyline">
                     <img src="./imgs/manyline.png" alt="#manylines">
+                </div>
+                <div class="banner-phone">
+                    <a href="#playbtn">
+                        <img src="./imgs/playbtn.png" alt="#playbtn">
+                    </a> 
                 </div>
                 <div class="text">
                     <h2>
@@ -212,6 +228,9 @@
         </div>
     </section>
     <section class="new-games">
+        <div class="pic">
+            <img src="./imgs/play.png" alt="">
+        </div>
         <div class="container">
             <div class="new-games-content">
                 <div class="head-text">
@@ -225,47 +244,54 @@
                 </div>
                 <div class="new-games-slide">
                     <div class="picture-section">
-                        <div class="pic" style="background-image: url(./imgs/play.png);">
-                        </div>
                     </div>
                     <div class="circle-slide">
                         <div class="circle-slide-cards">
-                            <div class="card" style="background-image: url(./imgs/play-2.jpg);">
-                                <div class="top-text">
-                                    <h4>Battlelands royale</h4>
-                                    <p>Eliminate 10 opponents</p>
-                                </div>
-                                <div class="bottom-text">
-                                    <span>Player Signes</span>
-                                    <div class="players">
-                                        <span><img src="./imgs/sign.png" alt=""></span>
-                                        <button><a href="#next"><i class="fas fa-long-arrow-alt-right"></i></a></button>
+                            <div class="card" 
+                                style="background-image: url(./imgs/play-2.jpg);">
+                                <div class="text">
+                                    <div class="top-text">
+                                        <h4>Battlelands royale</h4>
+                                        <p>Eliminate 10 opponents</p>
+                                    </div>
+                                    <div class="bottom-text">
+                                        <span>Player Signes</span>
+                                        <div class="players">
+                                            <span><img src="./imgs/sign.png" alt=""></span>
+                                            <button><a href="#next"><i class="fas fa-long-arrow-alt-right"></i></a></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" style="background-image: url(./imgs/play-3.jpg);">
-                                <div class="top-text">
-                                    <h4>Extreme battles</h4>
-                                    <p>Eliminate 10 opponents</p>
-                                </div>
-                                <div class="bottom-text">
-                                    <span>Player Signed</span>
-                                    <div class="players">
-                                        <span><img src="./imgs/sign.png" alt=""></span>
-                                        <button><a href="#next"><i class="fas fa-long-arrow-alt-right"></i></a></button>
+                            <div class="card" 
+                            style="background-image: url(./imgs/play-3.jpg);">
+                                <div class="text">
+                                    <div class="top-text">
+                                        <h4>Extreme battles</h4>
+                                        <p>Eliminate 10 opponents</p>
+                                    </div>
+                                    <div class="bottom-text">
+                                        <span>Player Signed</span>
+                                        <div class="players">
+                                            <span><img src="./imgs/sign.png" alt=""></span>
+                                            <button><a href="#next"><i class="fas fa-long-arrow-alt-right"></i></a></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="card" style="background-image: url(./imgs/play-1.jpg);">
-                                <div class="top-text">
-                                    <h4>Moto Racing</h4>
-                                    <p>Run 20,000 meters</p>
-                                </div>
-                                <div class="bottom-text">
-                                    <span>Player Signed</span>
-                                    <div class="players">
-                                        <span><img src="./imgs/sign.png" alt=""></span>
-                                        <button><a href="#next"><i class="fas fa-long-arrow-alt-right"></i></a></button>
+                            <div class="card" 
+                                style="background-image: url(./imgs/play-1.jpg);">
+                                <div class="text">
+                                    <div class="top-text">
+                                        <h4>Moto Racing</h4>
+                                        <p>Run 20,000 meters</p>
+                                    </div>
+                                    <div class="bottom-text">
+                                        <span>Player Signed</span>
+                                        <div class="players">
+                                            <span><img src="./imgs/sign.png" alt=""></span>
+                                            <button><a href="#next"><i class="fas fa-long-arrow-alt-right"></i></a></button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -273,10 +299,13 @@
                         </div>
                         <div class="circle">
                             <div class="slide-left">
-                                <img src="./imgs/after.png" alt="">
+                                <img src="./imgs/after.png" alt="#left-circle">
                             </div>
                             <div class="slide-right">
-                                <img src="./imgs/before.png" alt="">
+                                <img src="./imgs/before.png" alt="#right-circle">
+                            </div>
+                            <div class="circle-bg-pic">
+                                <img src="./imgs/circle.png" alt="#bg-circle">
                             </div>
                         </div>
                     </div> 
@@ -358,7 +387,7 @@
                     </div>
                 </div>
                 <div class="tournaments">
-                    <div class="tour-content">
+                    <div class="tour-items">
                         <div class="cards">
                             <div class="pic">
                                 <img src="./imgs/challenge-1.png" alt="">
@@ -543,29 +572,37 @@
         </div>
     </section>
     <section class="testimonials">
+        <div class="bagel">
+            <img src="./imgs/circle-1.png" alt="">
+        </div>
+        <div class="lil-bagel">
+            <img src="./imgs/circle-2.png" alt="">
+        </div>
         <div class="container">
             <div class="testimonials-content">
-                <div class="bagel">
-                    <img src="./imgs/circle-1.png" alt="">
-                </div>
-                <div class="lil-bagel">
-                    <img src="./imgs/circle-2.png" alt="">
-                </div>
                 <div class="slide">
-                    <div class="text">
-                        <img src="./imgs/client.png" alt="">
-                        <span class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                        </span>
-                        <p>
-                            So easy to discover incredible new games, I can start playing immediately; one click and I’m in!
-                        </p>
-                        <div class="client-name">
-                            <p>Donnie Neal</p>
+                    <div class="next-btn">
+                        <img src="./imgs/next.png" alt="#nextbtn">
+                    </div>
+                    <div class="pre-btn">
+                        <img src="./imgs/prev.png" alt="#prebtn">
+                    </div>
+                    <div class="slide-cyrcle">
+                        <div class="text">
+                            <img src="./imgs/client.png" alt="">
+                            <span class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+                            <p>
+                                So easy to discover incredible new games, I can start playing immediately; one click and I’m in!
+                            </p>
+                            <div class="client-name">
+                                <p>Donnie Neal</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -630,7 +667,7 @@
                         </div>
                         <div class="price">
                             <span>Personal</span>
-                            <h2><span>$</span>6.99</h2>
+                            <h2><span>$</span>9.99</h2>
                             <span>Per month</span>
                         </div>
                         <ul>
@@ -663,7 +700,7 @@
                         </div>
                         <div class="price">
                             <span>Personal</span>
-                            <h2><span>$</span>6.99</h2>
+                            <h2><span>$</span>19.99</h2>
                             <span>Per month</span>
                         </div>
                         <ul>
@@ -693,7 +730,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> 
     <section class="faq">
         <div class="container">
             <div class="faq-content">
@@ -707,17 +744,80 @@
                 <div class="questions-section">
                     <div class="questions">
                         <ul>
-                            <li><p>Does Utomik Work On Mobile,Mac And Windows?</p>
-                                <span></span>
+                            <li>
+                                <details>
+                                    <summary>
+                                        Does Utomik Work On Mobile,Mac And Windows?
+                                    </summary>
+                                    
+                                        <p>
+                                            The base requirement is to simply have an internet connection in order to run gamio. Our downloading system will decide how much of the game to download before starting a game based upon your connection. 
+                                        </p>
+    
+                                        <p>
+                                            This means that if you have a fast connection, the games will start up faster due to downloading less. If you have a slow connection, the games will start up slower due to downloading more, but this is to ensure that you have no issues while you play no matter what connection speed you have.
+                                        </p> 
+                                        <p>
+                                            If you would like further information about how this system works, please send an email to <a href="#support">support@medforce.com.</a>
+                                        </p>
+                                    
+                                </details>
                             </li>
-                            <li><p>Does Utomik Work On Mobile,Mac And Windows?</p>
-                                <span></span>
+                            <li><details>
+                                <summary>
+                                    What Kind Of Games Are On Gamio?
+                                </summary>
+                                
+                                    <p>
+                                        The base requirement is to simply have an internet connection in order to run gamio. Our downloading system will decide how much of the game to download before starting a game based upon your connection. 
+                                    </p>
+
+                                    <p>
+                                        This means that if you have a fast connection, the games will start up faster due to downloading less. If you have a slow connection, the games will start up slower due to downloading more, but this is to ensure that you have no issues while you play no matter what connection speed you have.
+                                    </p> 
+                                    <p>
+                                        If you would like further information about how this system works, please send an email to <a href="#support">support@medforce.com.</a>
+                                    </p>
+                                
+                            </details>
                             </li>
-                            <li><p>Does Utomik Work On Mobile,Mac And Windows?</p>
-                                <span></span>
+                            <li>
+                                <details>
+                                    <summary>
+                                        What Internet Speed Do I Need For Gamio?
+                                    </summary>
+                                    
+                                        <p>
+                                            The base requirement is to simply have an internet connection in order to run gamio. Our downloading system will decide how much of the game to download before starting a game based upon your connection. 
+                                        </p>
+    
+                                        <p>
+                                            This means that if you have a fast connection, the games will start up faster due to downloading less. If you have a slow connection, the games will start up slower due to downloading more, but this is to ensure that you have no issues while you play no matter what connection speed you have.
+                                        </p> 
+                                        <p>
+                                            If you would like further information about how this system works, please send an email to <a href="#support">support@medforce.com.</a>
+                                        </p>
+                                    
+                                </details>
                             </li>
-                            <li><p>Does Utomik Work On Mobile,Mac And Windows?</p>
-                                <span></span>
+                            <li>
+                                <details> 
+                                    <summary>
+                                        Can I Play As Much As I Want?
+                                    </summary>
+                                    
+                                        <p>
+                                            The base requirement is to simply have an internet connection in order to run gamio. Our downloading system will decide how much of the game to download before starting a game based upon your connection. 
+                                        </p>
+    
+                                        <p>
+                                            This means that if you have a fast connection, the games will start up faster due to downloading less. If you have a slow connection, the games will start up slower due to downloading more, but this is to ensure that you have no issues while you play no matter what connection speed you have.
+                                        </p> 
+                                        <p>
+                                            If you would like further information about how this system works, please send an email to <a href="#support">support@medforce.com.</a>
+                                        </p>
+                                    
+                                </details>
                             </li>
                         </ul>
                     </div>
@@ -735,7 +835,7 @@
     </section>
     <footer class="footer"> 
         <div class="footer-bg">
-            <img src="./imgs/footer-bg.png" alt="">
+            
         </div>
         <div class="container">
             <div class="footer-content">
@@ -743,7 +843,7 @@
                     <img src="./imgs/footer-element-one.png" alt="">
                 </div>
                 <div class="footer-element2">
-                    <img src="./imgs/phone.png" alt="">
+                    <img src="./imgs/phone.png" alt="#phone">
                 </div>
                 <div class="dot1">
                     <img src="./imgs/dotline.png" alt="">
@@ -781,7 +881,7 @@
                     <p>We respect your privacy, so we never share your info</p>
                 </div>
 
-                <div class="copyrights">
+                <div class="copyrights-content">
                     <div class="logo-section">
                         <div class="logo">
                             <img src="./imgs/logo.png" alt="#medforce">
@@ -809,4 +909,4 @@
         </div>
     </footer> 
 </body>
-</html>
+</html> 

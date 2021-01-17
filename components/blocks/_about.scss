@@ -96,15 +96,20 @@
 
             @media (max-width: 930px){
                 align-items: center;
-                display: grid;
-                grid-template-columns: 350px 350px;
             }
             @media (max-width: 730px){
-                display: grid;
+                grid-template-columns: 1fr 1fr;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            @media (max-width: 546px){
                 grid-template-columns: 1fr;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
+                padding-left: 20vmin;
             }
 
             .card:nth-child(2){
@@ -130,14 +135,10 @@
                 text-align: center;
 
                 &:hover>::before{
-                    -ms-transform: translate(0%, 0%);
-                    -webkit-transform: translate(0%, 0%);
                     transform: translate(0%, 0%);
                     opacity: 1;
                 }
                 &:hover>::after{
-                    -ms-transform: translate(0%, 0%);
-                    -webkit-transform: translate(0%, 0%);
                     transform: translate(0%, 0%);
                     opacity: 1;
                 }
@@ -225,30 +226,35 @@
 
             @media (max-width: 733px){
                 width: 100%;
+                padding-top: 4em;
             }
 
             @include text;
             h2{
-                font-size: 60px !important;
-                font-weight: 700 !important;
+                font-size: 60px;
+                font-weight: 700;
                 margin-bottom: 10px;
+
+                @media (max-width: 518px) {
+                    font-size: 10vmin;
+                }
             }
 
             p{
-                font-size: 18px !important;
+                font-size: 18px;
                 font-weight: 500;
-                padding-top: 20px !important;
-                letter-spacing: normal !important;
-                text-transform: none !important;
+                padding-top: 20px ;
+                letter-spacing: normal ;
+                text-transform: none;
             }
 
             span{
-                color: #05c3de !important;
+                color: #05c3de;
             }
 
             @include btn;
             button{
-                margin-top: 20px !important;
+                margin-top: 20px;
             }
         }
     }
