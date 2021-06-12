@@ -96,7 +96,7 @@
                 .card{
                     width: 360px;
                     display: inline-block;
-                    height: 150px;
+                    height: auto;
                     background-color: #1c1d55;
                     padding: 40px 30px 40px 30px;
                     text-align: left;
@@ -159,7 +159,7 @@
                         animation: pulse 5s linear infinite;
                     }
                     .position-1 {
-                        top: 16%;
+                        top: 30%;
                         left: 38%;
                     }
 
@@ -176,8 +176,8 @@
                         left: 28%;
                     }
                     .position-5 {
-                        top: 16%;
-                        left: 68%;
+                        top: 32%;
+                        left: 61%;
                     }
                     .position-6 {
                         top: 36%;
@@ -189,11 +189,9 @@
                     }
                     .position-8 {
                         top: 75%;
-                        left: 86%;
+                        left: 71%;
                     }
                 }
-
-
             }
         }
         .tournaments{
@@ -218,7 +216,7 @@
                 }
                 @media (max-width: 729px) {
                     grid-template-columns: 1fr;
-                    gap: 3em;
+           
                     padding: 2.5em 2.5em;
                 }
             }
@@ -235,7 +233,6 @@
                 @media (max-width: 879px) {
                     border: 1px solid #4d4d85;
                     border-radius: 10px;
-                    padding: 1em;
                 }
 
                 .pic{

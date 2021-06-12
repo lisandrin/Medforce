@@ -346,6 +346,10 @@
             padding-top: 10em;
             background-color: transparent;
 
+            @media (max-width:477px) {
+                text-align: center;
+            }
+
             .logo-section{
                 width: 100%;
                 display: flex;
@@ -354,17 +358,17 @@
                 padding: 10px;
 
                 @media (max-width:477px) {
-                    display: inline-block;
+                    display: block;
                     justify-content: center;
                 }
 
                 .logo{
-                    width: 200px;
+                    width: 100%;
                     height: auto;
                     padding-top: 15px;
     
                     img{
-                        width: 100%;
+                        width: 200px;
                         background-repeat: no-repeat;
                         background-size: 100%;
                     } 
@@ -381,6 +385,10 @@
                 border-top: 1px solid #40509d;
                 margin-top: 20px;
                 justify-content: space-between; 
+
+                @media (max-width:479px) {
+                    display: block;
+                }
 
                 .inner-text{
                     width: 100%;
@@ -399,6 +407,10 @@
                     list-style: none;
                     display: flex;
                     justify-content: flex-end;
+
+                    @media (max-width:479px) {
+                        justify-content: center;
+                    }
 
                     li{
                         border-radius: 50%;

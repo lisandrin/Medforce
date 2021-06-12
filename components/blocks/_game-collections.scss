@@ -19,6 +19,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             gap: 20px;
+            padding: 1em;
 
             @media (max-width: 1099px) {
                 grid-template-columns: 1fr 1fr;
@@ -26,17 +27,10 @@
 
             @media (max-width: 732px) {
                 grid-template-columns: 1fr;
-                justify-content: center;
-                align-items: center;
-                padding-left: 20vmin;
-            }
-
-            @media (max-width: 463px){
-                padding: 0;
             }
 
             .card{
-                width: 21.5em;
+                width: 100%;
                 height: auto;
                 display: inline-block;
                 background-color: #fff;
@@ -53,6 +47,10 @@
                     width: 100%;
                     height: auto;
                     position: relative;
+
+                    img{
+                        width: 100%;
+                    }
                     
                     &::before{
                         position: absolute;
@@ -60,7 +58,7 @@
                         top: 0;
                         left: 0;
                         width: 100%;
-                        height: 97%;
+                        height: 97.5%;
                         opacity: .5;
                         border-radius: 10px 10px 0 0;
                         background-image: -moz-linear-gradient( -30deg, rgb(193,101,221) 0%, rgb(92,39,254) 100%);

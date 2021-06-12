@@ -1907,7 +1907,7 @@ img {
 .join-world .join-world-content .customers .user-numbs .card {
   width: 360px;
   display: inline-block;
-  height: 150px;
+  height: auto;
   background-color: #1c1d55;
   padding: 40px 30px 40px 30px;
   text-align: left;
@@ -1980,7 +1980,7 @@ img {
 }
 
 .join-world .join-world-content .customers .map .pic .position-1 {
-  top: 16%;
+  top: 30%;
   left: 38%;
 }
 
@@ -2000,8 +2000,8 @@ img {
 }
 
 .join-world .join-world-content .customers .map .pic .position-5 {
-  top: 16%;
-  left: 68%;
+  top: 32%;
+  left: 61%;
 }
 
 .join-world .join-world-content .customers .map .pic .position-6 {
@@ -2016,7 +2016,7 @@ img {
 
 .join-world .join-world-content .customers .map .pic .position-8 {
   top: 75%;
-  left: 86%;
+  left: 71%;
 }
 
 .join-world .join-world-content .tournaments {
@@ -2053,7 +2053,6 @@ img {
   .join-world .join-world-content .tournaments .tour-items {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    gap: 3em;
     padding: 2.5em 2.5em;
   }
 }
@@ -2076,7 +2075,6 @@ img {
   .join-world .join-world-content .tournaments .cards {
     border: 1px solid #4d4d85;
     border-radius: 10px;
-    padding: 1em;
   }
 }
 
@@ -2176,6 +2174,7 @@ img {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  padding: 1em;
 }
 
 @media (max-width: 1099px) {
@@ -2189,24 +2188,11 @@ img {
   .game-collection .game-collection-content .cards {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding-left: 20vmin;
-  }
-}
-
-@media (max-width: 463px) {
-  .game-collection .game-collection-content .cards {
-    padding: 0;
   }
 }
 
 .game-collection .game-collection-content .cards .card {
-  width: 21.5em;
+  width: 100%;
   height: auto;
   display: inline-block;
   background-color: #fff;
@@ -2226,13 +2212,17 @@ img {
   position: relative;
 }
 
+.game-collection .game-collection-content .cards .card .pic img {
+  width: 100%;
+}
+
 .game-collection .game-collection-content .cards .card .pic::before {
   position: absolute;
   content: '';
   top: 0;
   left: 0;
   width: 100%;
-  height: 97%;
+  height: 97.5%;
   opacity: .5;
   border-radius: 10px 10px 0 0;
   background-image: -webkit-linear-gradient(-30deg, #c165dd 0%, #5c27fe 100%);
@@ -3364,6 +3354,12 @@ img {
   background-color: transparent;
 }
 
+@media (max-width: 477px) {
+  .footer .footer-content .copyrights-content {
+    text-align: center;
+  }
+}
+
 .footer .footer-content .copyrights-content .logo-section {
   width: 100%;
   display: -webkit-box;
@@ -3378,7 +3374,7 @@ img {
 
 @media (max-width: 477px) {
   .footer .footer-content .copyrights-content .logo-section {
-    display: inline-block;
+    display: block;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -3386,13 +3382,13 @@ img {
 }
 
 .footer .footer-content .copyrights-content .logo-section .logo {
-  width: 200px;
+  width: 100%;
   height: auto;
   padding-top: 15px;
 }
 
 .footer .footer-content .copyrights-content .logo-section .logo img {
-  width: 100%;
+  width: 200px;
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -3444,6 +3440,12 @@ img {
           justify-content: space-between;
 }
 
+@media (max-width: 479px) {
+  .footer .footer-content .copyrights-content .copyright {
+    display: block;
+  }
+}
+
 .footer .footer-content .copyrights-content .copyright .inner-text {
   width: 100%;
   height: auto;
@@ -3466,6 +3468,14 @@ img {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+@media (max-width: 479px) {
+  .footer .footer-content .copyrights-content .copyright ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer .footer-content .copyrights-content .copyright ul li {
